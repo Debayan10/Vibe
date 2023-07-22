@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Vibe</string>
+    <string name="login">Login</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="add_image">Add Image</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="verify">Verify</string>
+    <string name="vibe">Vibe</string>
+    <string name="signup">Signup</string>
+    <string name="send_otp">Send OTP</string>
+</resources>

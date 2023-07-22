@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:overScrollMode="never"
+    android:padding="35sp"
+    android:scrollbars="none"
+    tools:context=".SignInActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/container">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:src="@drawable/logo2" />
+
+            <TextView
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".7"
+                android:gravity="left"
+                android:fontFamily="@font/font1"
+                android:includeFontPadding="true"
+                android:text="@string/vibe"
+                android:textColor="@color/primary"
+                android:textSize="70sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:text="@string/welcome_back"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:text="@string/login"
+            android:textColor="@color/grey"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputPhno"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginTop="45sp"
+            android:background="@drawable/background_input"
+            android:hint="@string/phone_number"
+            android:text="+91-"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="phone"
+            android:paddingStart="20sp"
+            android:paddingEnd="20sp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/inputPass"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/background_input"
+            android:hint="@string/password"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:paddingStart="20sp"
+            android:paddingEnd="20sp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:animateLayoutChanges="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="55sp"
+                android:text="@string/sign_in"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:cornerRadius="8sp" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/aniProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/loading2"
+                android:layout_gravity="center"
+                android:visibility="invisible" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:text="@string/sign_up"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</ScrollView>
+
