@@ -14,4 +14,6 @@
     <string name="vibe">Vibe</string>
     <string name="signup">Signup</string>
     <string name="send_otp">Send OTP</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
