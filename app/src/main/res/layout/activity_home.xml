@@ -13,22 +13,22 @@
         android:layout_height="?attr/actionBarSize"
         android:background="@color/blue"
         android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
 
-<!--    <include-->
-<!--        android:id="@+id/appbar"-->
-<!--        layout="@layout/appbar"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"/>-->
-
-
-
-
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/purple"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:fontFamily="serif"/>
 
     </androidx.appcompat.widget.Toolbar>
 
@@ -44,7 +44,8 @@
         app:tabIndicatorAnimationMode="elastic"
         app:tabIndicatorGravity="center"
         app:tabMode="fixed"
-        app:tabSelectedTextColor="@color/purple" />
+        app:tabSelectedTextColor="@color/purple"
+        android:background="@drawable/background_tab"/>
 
 
     <androidx.viewpager2.widget.ViewPager2
