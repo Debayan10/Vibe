@@ -111,7 +111,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     private void loadUserDetails() {
-        binding.name.setText("Hello " + preferenceManager.getString(Constants.KEY_NAME));
+        binding.name.setText("Hello " + preferenceManager.getString(Constants.KEY_NAME) + ",");
     }
 
     private void showToast(String message) {
