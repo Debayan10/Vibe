@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 
 import com.example.vibe.Fragments.MyFragmentAdapter;
+import com.example.vibe.Otpverification.OtpSendActivity;
 import com.example.vibe.R;
 import com.example.vibe.activities.SignInActivity;
 import com.example.vibe.databinding.ActivityHomeBinding;
@@ -104,6 +105,9 @@ public class HomeActivity extends AppCompatActivity {
             case "Logout":
                 signout();
                 return true;
+
+            case "Profile":
+                startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
             default:
                 return super.onOptionsItemSelected(item);
         }
