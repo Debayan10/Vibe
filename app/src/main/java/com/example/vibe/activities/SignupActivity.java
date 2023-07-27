@@ -1,4 +1,4 @@
-package com.example.vibe;
+package com.example.vibe.activities;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
@@ -24,7 +24,6 @@ import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.HashMap;
-import java.util.Objects;
 
 public class SignupActivity extends AppCompatActivity {
 

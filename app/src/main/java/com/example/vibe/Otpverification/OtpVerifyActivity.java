@@ -10,8 +10,7 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.vibe.R;
-import com.example.vibe.SignupActivity;
+import com.example.vibe.activities.SignupActivity;
 import com.example.vibe.databinding.ActivityOtpVerifyBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;

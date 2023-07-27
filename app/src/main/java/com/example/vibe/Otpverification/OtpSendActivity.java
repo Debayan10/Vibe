@@ -9,15 +9,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.vibe.R;
-import com.example.vibe.SignInActivity;
+import com.example.vibe.activities.SignInActivity;
 import com.example.vibe.databinding.ActivityOtpSendBinding;
-import com.example.vibe.databinding.ActivitySigninBinding;
 import com.google.firebase.FirebaseException;
-import com.google.firebase.FirebaseTooManyRequestsException;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
-import com.google.firebase.auth.FirebaseAuthMissingActivityForRecaptchaException;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthOptions;
 import com.google.firebase.auth.PhoneAuthProvider;

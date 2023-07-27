@@ -9,7 +9,7 @@
     android:overScrollMode="never"
     android:padding="24sp"
     android:scrollbars="none"
-    tools:context=".SignupActivity">
+    tools:context=".activities.SignupActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

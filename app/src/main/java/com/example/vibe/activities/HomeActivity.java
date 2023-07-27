@@ -1,4 +1,4 @@
-package com.example.vibe;
+package com.example.vibe.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,11 +7,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.content.Intent;
-import android.util.Base64;
 import android.view.MenuItem;
-import android.view.Window;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -19,6 +16,8 @@ import android.widget.Toast;
 
 
 import com.example.vibe.Fragments.MyFragmentAdapter;
+import com.example.vibe.R;
+import com.example.vibe.activities.SignInActivity;
 import com.example.vibe.databinding.ActivityHomeBinding;
 import com.example.vibe.utilities.Constants;
 import com.example.vibe.utilities.PreferenceManager;
@@ -28,10 +27,7 @@ import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.messaging.FirebaseMessaging;
 
-import org.checkerframework.checker.units.qual.C;
-
 import java.util.HashMap;
-import java.util.Objects;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -93,6 +89,7 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
     }
+
     //*********OptionMenu***********
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -132,7 +129,6 @@ public class HomeActivity extends AppCompatActivity {
                         preferenceManager.getString(Constants.KEY_USER_ID)
                 );
         documentReference.update(Constants.KEY_FCM_TOKEN, token)
-                .addOnSuccessListener(unused -> showToast("Token updated successfully"))
                 .addOnFailureListener(e -> showToast("Unable to update token"));
     }
 
@@ -153,4 +149,5 @@ public class HomeActivity extends AppCompatActivity {
                 })
                 .addOnFailureListener(e -> showToast("Unable to sign out"));
     }
+
 }

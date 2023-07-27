@@ -1,8 +1,15 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Vibe" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Theme.Vibe" parent="Theme.Material3.Light.NoActionBar">
        <item name="colorPrimary">@color/primary</item>
         <item name="android:statusBarColor" tools:targetApi="l">@color/primary</item>
+
+<!--        This is for enabling transitions-->
+        <item name="android:windowActivityTransitions">true</item>
+
+<!--        Setting us enter and exit transition-->
+        <item name="android:windowEnterTransition">@transition/trans_anim</item>
+        <item name="android:windowExitTransition">@transition/trans_anim</item>
     </style>
 
 </resources>

@@ -1,8 +1,7 @@
-package com.example.vibe;
+package com.example.vibe.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Patterns;
 import android.view.View;
 import android.widget.Toast;
 
@@ -15,9 +14,6 @@ import com.example.vibe.utilities.Constants;
 import com.example.vibe.utilities.PreferenceManager;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
-
-import java.util.HashMap;
-import java.util.regex.Pattern;
 
 public class SignInActivity extends AppCompatActivity {
 
