@@ -106,7 +106,7 @@ public class HomeActivity extends AppCompatActivity {
                 signout();
                 return true;
 
-            case "Profile":
+            case "Profile" :
                 startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
             default:
                 return super.onOptionsItemSelected(item);

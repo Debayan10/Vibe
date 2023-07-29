@@ -30,6 +30,7 @@
             android:maxLines="1"
             android:fontFamily="serif"/>
 
+
     </androidx.appcompat.widget.Toolbar>
 
     <com.google.android.material.tabs.TabLayout

@@ -37,12 +37,9 @@ public class SignupActivity extends AppCompatActivity {
         binding = ActivitySignupBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         preferenceManager = new PreferenceManager(getApplicationContext());
+        binding.phno.setText(String.format("%s",getIntent().getStringExtra("phone")));
         checkUserRegistered();
         setListeners();
-
-        binding.phno.setText(String.format("%s",getIntent().getStringExtra("phone")));
-
-
     }
 
     private void checkUserRegistered() {
